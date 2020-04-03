@@ -31,6 +31,10 @@ function increaseST() {
     console.log(SlutTime);
 }
 
+function decreaseST() {
+    SlutTime -=1;
+    console.log(SlutTime);
+}
 var SlutMinute = 0;
 console.log(SlutMinute);
 function increateSM() {
@@ -56,12 +60,16 @@ function MinuteFunction() {
 }
 // Hentning af tidspunkt fra computer
 
-if(startTime == timeFunction && StartMinute == MinuteFunction ) {
-    console.log('Light is on')
-} else {
-}
+function overvejelse() {
+    if(startTime == timeFunction && StartMinute == MinuteFunction ) {
+        console.log('Light is on')
+    } else {
+    }
 
-if(SlutTime == timeFunction && SlutMinute == MinuteFunction) {
-    console.log('Light is shut off')
-} else {
+    if(SlutTime == timeFunction && SlutMinute == MinuteFunction) {
+        console.log('Light is shut off')
+    } else {
+    }
+    setInterval(function overvejelse(){60000});
 }
+// spørger om hvor vidt timen og tingen er rigtigt.
