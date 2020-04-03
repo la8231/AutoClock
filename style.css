@@ -62,3 +62,12 @@ body{
 .span-two {
     grid-column: span 2;
 }
+#indicator {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    width: 300px;
+    margin: auto;
+    border: solid black 1px;
+    border-radius: 5px;
+}
