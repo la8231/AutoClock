@@ -1,29 +1,49 @@
-var stt = timeFunction;
-// Start time
+var startTime = 0;
+console.log(startTime);
+function increaset () {
+  startTime += 1;
+  console.log(startTime);
+}
 
-var stm = MinuteFunction;
-// start minute
+function decreaset() {
+    startTime -= 1;
+    console.log(startTime);
+}
+// Start time & increase
 
-var slt;
-// slut time
+var StartMinute = 0;
+console.log(StartMinute);
+function IncreaseM() {
+    StartMinute += 1;
+    console.log(StartMinute);
+}
 
-var slm;
+function decreaseM() {
+    StartMinute -= 1;
+    console.log(StartMinute);
+}
+// Start Minute & increase og decreaase
 
-var stto;
-var sttn;
-// Start time op / ned
+var SlutTime = 0;
+console.log(SlutTime);
+function increaseST() {
+    SlutTime +=1;
+    console.log(SlutTime);
+}
 
-var stmo;
-var stmn;
-// Start Minute op / ned
+var SlutMinute = 0;
+console.log(SlutMinute);
+function increateSM() {
+    SlutMinute += 1;
+    console.log(SlutMinute);
+}
 
-var slto;
-var sltn;
-// Slut time op / Ned
+function decreaseSM() {
+    SlutMinute -= 1;
+    console.log(SlutMinute);
+}
+// Slut minute & Increase og Decrease
 
-var slmo;
-var slmn;
-// SLut Minute Op / ned
 
 
 function timeFunction() {
@@ -34,23 +54,14 @@ function MinuteFunction() {
     var d = new Date()
     var n = d.getMinutes()
 }
+// Hentning af tidspunkt fra computer
 
-if(stt == timeFunction && stm == MinuteFunction ) {
-    console.log('Hello')
+if(startTime == timeFunction && StartMinute == MinuteFunction ) {
+    console.log('Light is on')
 } else {
 }
 
-
-
-/* if(StartT == Gh && StartM == Gm) {
-    lights = true
+if(SlutTime == timeFunction && SlutMinute == MinuteFunction) {
+    console.log('Light is shut off')
 } else {
 }
-
-if(lights == true){
-    console.log('Lights are on')
-} else {
-    console.log('Lights are off')
-}
-
-*/
