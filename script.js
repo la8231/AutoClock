@@ -1,75 +1,22 @@
-var startTime = 0;
-console.log(startTime);
-function increaset () {
-  startTime += 1;
-  console.log(startTime);
+var startHourInput = document.getElementById('startHourInput');
+var startMinuteInput = document.getElementById('startMinuteInput');
+function getDate() {
+    return new Date();
 }
-
-function decreaset() {
-    startTime -= 1;
-    console.log(startTime);
+function setStartTime() {
+   if(startHourInput.value < getDate().getHours()) {
+       turnLightOn();
+   } else if (startHourInput.value == getDate().getHours()) {
+        if (startMinuteInput.value <= getDate().getMinutes()) {
+            turnLightOn();
+        }
+   }
+}  
+function turnLightOn() {
+    document.getElementById('indicator').className = 'lightOn';
+    document.getElementById('indicator').innerHTML = 'Lyset er tændt';
 }
-// Start time & increase
-
-var StartMinute = 0;
-console.log(StartMinute);
-function IncreaseM() {
-    StartMinute += 1;
-    console.log(StartMinute);
+function turnLightOff() {
+    document.getElementById('indicator').className = 'lightOff';
+    document.getElementById('indicator').innerHTML = 'Lyset er slukket';
 }
-
-function decreaseM() {
-    StartMinute -= 1;
-    console.log(StartMinute);
-}
-// Start Minute & increase og decreaase
-
-var SlutTime = 0;
-console.log(SlutTime);
-function increaseST() {
-    SlutTime +=1;
-    console.log(SlutTime);
-}
-
-function decreaseST() {
-    SlutTime -=1;
-    console.log(SlutTime);
-}
-var SlutMinute = 0;
-console.log(SlutMinute);
-function increateSM() {
-    SlutMinute += 1;
-    console.log(SlutMinute);
-}
-
-function decreaseSM() {
-    SlutMinute -= 1;
-    console.log(SlutMinute);
-}
-// Slut minute & Increase og Decrease
-
-
-
-function timeFunction() {
-    var d = new Date()
-    var n = d.getHours();
-}
-function MinuteFunction() {
-    var d = new Date()
-    var n = d.getMinutes()
-}
-// Hentning af tidspunkt fra computer
-
-function overvejelse() {
-    if(startTime == timeFunction && StartMinute == MinuteFunction ) {
-        console.log('Light is on')
-    } else {
-    }
-
-    if(SlutTime == timeFunction && SlutMinute == MinuteFunction) {
-        console.log('Light is shut off')
-    } else {
-    }
-    setInterval(function overvejelse(){60000});
-}
-// spørger om hvor vidt timen og tingen er rigtigt.
