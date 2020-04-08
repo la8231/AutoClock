@@ -34,31 +34,27 @@
             <hr>
             <br><br>
 
-            <div id='indicator'>
-                <h3>Lyset er slukket</h3>
+            <div id='indicator' class='lightOff'>
+                Lyset er slukket
             </div>
 
             <br><br>
             <hr>
             <br><br><br><br><br><br>
 
-
-
-            <button type='button' onclick="increaset()">^</button>
-            <button type='button' onclick="IncreaseM()">^</button>
-            <br>
-            <button type='button' onclick="decreaset()">v</button>
-            <button type='button' onclick="decreaseM()">v</button>
+            <input type='number' id='startHourInput'>
+            <input type='number' id='startMinuteInput'>
+            <button onclick='setStartTime()'>Enable</button>
 
             <br><br> <br><br><br><br>
             <hr>
             <br><br><br>
-            <button type='button' onclick="increaseST()">^</button>
-            <button type='button' onclick="increateSM()">^</button>
+            <input type='number' id='endHourInput'>
+            <input type='number' id='endMinuteInput'>
+            <button onclick='setEndTime()'>Enable</button>
             <br>
-            <button type='button' onclick="decreaseST()">v</button>
-            <button type='button' onclick="decreaseSM()">v</button>
- 
+            <br>
+            <br>
             <script src="script.js"></script>
 
 </body>
