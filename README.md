@@ -5,7 +5,7 @@ I vores projekt vil vi lave en automatisk timer, hvor man undgår at skulle køb
 Det skal fungere lidt ligesom Philips Hue, hvor man sætter sin timer automatisk. Man skal bestemme, hvornår lyset skal tændes, og hvornår den skal slukkes igen.
 Det gør man ved, at man starter med at bestemme timen og minuttet den skal starte på, og derefter timen og minutten den skal slutte på.
 
-Vi vil gøre det ved at bruge to "if-statements", som skal bestemme om lyset er tændt eller ej, baseret på et bestemt tidspunkt, brugeren vælger. 
+Vi vil gøre det ved at bruge "if-statements", som skal bestemme om lyset er tændt eller ej, baseret på et bestemt tidspunkt, brugeren vælger. 
 
 ----
 
